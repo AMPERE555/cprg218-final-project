@@ -9,15 +9,14 @@
     </head>
     <body>
         <header>
-
             <!--Logo-->
             
-            <a href="#"><img src="logos/logo_black.svg" width="423" height="127" alt="Hibiscus flower and Shangri-La logo"></a><!--ADD LINK LATER-->
+            <a href="#"><img src="logos/logo_black.svg" width="423" height="127" alt="Hibiscus flower and Shangri-La logo"></a><!--ADD LINK LATER:Link to Home-->
             <!--Original logo size is 1268x382--> <!--CHANGE - Modify file size?-->
 
             <!--Weather-->
            
-            <img height="120"><!--Weather - Add API-->
+            <img id="weather" height="120"><!--Weather - Add API--><!--JAVASCRIPT-->
 
             <!--Contact Icons-->
 
@@ -27,16 +26,35 @@
            
             <!--Book now "Button"-->
 
-            <a href="#">Book now</a> <!--ADD LINK LATER-->
+            <a href="#">Book now</a> <!--ADD LINK LATER:Link to Booking Page-->
 
             <!--Navigation-->
             <nav>
-                
+               <ul>
+                <li><a href="#">Home</a></li><!--ADD LINK LATER-->
+                <li><a href="#">Rooms</a></li><!--ADD LINK LATER-->
+                <li><a href="#">Dining</a></li><!--ADD LINK LATER-->
+                <li><a href="#">Experiences</a></li><!--ADD LINK LATER-->
+               </ul>
+               <!--When the user clicks on the search icon - the search bar appears--><!--JAVASCRIPT-->
+               <button id="search_button">&#128269;</button>
+               <input id="search_input" type="text" placeholder="Search..."><!--Global Search over all pages--><!--JAVASCRIPT-->
             </nav>
-
         </header>
-        <footer>
 
+        <footer>
+            <h2>Contact</h2>
+            <ul>
+                <li>Adress</li>
+                <li>Phone Number</li>
+                <li>Email</li>
+            </ul>
+            <a href="#"><img src="logos/social_media_icons/instagram-brands-solid-full.svg" width="50" height="50" alt="Instagram Icon"></a>
+            <a href="#"><img src="logos/social_media_icons/facebook-brands-solid-full.svg" width="50" height="50" alt="Facebook Icon"></a>
+            <a href="#"><img src="logos/social_media_icons/x-twitter-brands-solid-full.svg" width="50" height="50" alt="X-Twitter Icon"></a>
+            <small>&copy;Copyright bla bla bla</small>
         </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
