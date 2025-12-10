@@ -4,7 +4,7 @@
 /*GLOBAL*/
 
 body{
-    font-size: 160%;
+    font-size: 150%;
     margin:0;
     font-family:"Lexend Deca", Arial, Helvetica, sans-serif;
     font-optical-sizing: auto;
@@ -58,7 +58,7 @@ header{
 
 #navbooking a{
     padding:2rem;
-    font-size:145%;
+    font-size:155%;
     text-decoration:none;
     color:white;
 }
@@ -79,6 +79,8 @@ header{
     border-radius:15px;
     font-family:"Molle", cursive;
     background-color:#80C7BE ;
+    
+    text-align: center;
 }
 
 #bookbutton:hover{
@@ -93,6 +95,7 @@ nav{
     justify-content:space-between;
     background-color:#80C7BE ;
     color:#083833;
+    position:relative;
 }
 
 #nav_categories li{
@@ -151,7 +154,7 @@ button#hamburger{
 
 footer{
     
-    position: fixed;
+    position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -166,6 +169,8 @@ footer{
 
 #footer_text{
     padding-left:2rem;
+    max-width:90%;
+    min-width:70%;
 }
 
 #footer_text ul{
@@ -188,7 +193,8 @@ footer{
    padding:2rem;
 }
 
-footer small{
+#footer_social a{
+    margin-bottom:2rem;
 }
 
 #footer_social a:hover{
@@ -200,15 +206,160 @@ footer small{
 
 
 
-/*MEDIA QUERIES - LARGE SCREEN DESIGN TO MOBILE*/
+/*MEDIA QUERIES - FROM LARGE SCREEN DESIGN TO MOBILE*/
 
-/*BREAK POINT @ MAX-WIDTH 2444PX*/
+/*BREAK POINT @ MAX-WIDTH 2800PX*/
+@media screen and (max-width:2800px) {
+    #footer_social{
+        width:15%;
+    }
+    #navbooking a:last-of-type{
+    font-size:130%;
+}
+}
+
+/*BREAK POINT @MAX-WIDTH 1920PX*/
+@media screen and (max-width:1920px) {
+    body{
+        font-size:120%;
+    }
+     #footer_social{
+        width:17%;
+    }
+    
+}
+
+/*BREAK POINT @ MAX-WIDTH 1475PX*/
+@media screen and (max-width:1475px) {
+
+    #search{
+        font-size:90%;
+    }
+    #search_button{
+        width:5vw;
+        margin:0 3.6rem;
+    }
+    #search_input{
+        margin:0 0.8rem;
+        width:15vw;
+    }
+    #nav_categories li{
+    
+    padding:0.8rem 3rem;
+    margin-left:1rem;
+    
+}
+ #footer_social{
+        width:25%;
+    }
+}
 
 
-/*BREKA POINT @MAX-WIDTH 1260PX*/
-/*BODY FONT SIZE @125%*/
-/*BREAK POINT @ MAX-WIDTH 1000PX*/
+/*BREAK POINT @ MAX-WIDTH 1200PX*/ /*change to hamburger menu, change footer alignment, change icon size*/
+@media screen and (max-width:1200px) {
 
-/*BREAK POINT @ MAX-WIDTH 600PX
+body{
+    font-size:100%;
+}
+
+#toppage{
+    flex-direction:column;
+}
+
+#toppage a img{
+    max-width:40vw;
+    min-width:25vw;
+    height:auto;
+}
+
+#navbooking{
+    padding:0;
+    align-items:center;
+}
+
+#navbooking a{
+    padding:0;
+    margin:0 2rem;
+    
+}
+
+#bookbutton{
+    max-width:20vw;
+    min-width:10vw;
+    height:auto;
+    font-size:125%;
+    
+}
+
+    button#hamburger{
+        display:block;
+        margin:0 1rem;
+        width:4rem;
+        font-size:160%;
+        background:none;
+        color:#083833;
+        border:none;
+        cursor:pointer;
+    }
+
+
+nav{
+    height:7vw;
+}
+
+#nav_categories{
+        position:absolute;
+        top:100%;
+        right:0;
+        width:100%;
+        z-index:100;/*top layer*/
+        background-color:#F8D36C;
+        flex-direction: column;
+        display:none;
+}
+#nav_categories.active{
+    display:block;
+}
+#nav_categories ul{
+      padding-left: 0;
+    }
+#nav_categories li{
+        display:block;
+        text-align:center;
+        width:90%;
+        padding:0;
+        margin:0 auto;
+    }
+    #nav_categories li a{
+        display:block;
+        padding:1rem;
+    }
+    #nav_categories li a:hover{
+        color:#F8D36C;
+        text-decoration: underline;
+    }
+    
+    #footer_social{
+        width:30%;
+        text-align: right;
+    }
+    #footer_social a{
+        margin-right:1rem;
+    }
+    #footer_social a:last-of-type{
+        margin-right:0;
+    }
+    
+   #footer_text{
+    width:70%;
+   }
+
+   #footer_text li{
+    width:50%;
+   }
+
+}
+
+/*BREAK POINT @ MAX-WIDTH 900PX
 
 /*BREAK POINT @ MIN-WIDTH 320PX*/

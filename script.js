@@ -29,3 +29,12 @@ search_button.addEventListener('click',function(){
     }
 
 })
+
+//Hamburger Menu
+const hamburgerButton = document.getElementById('hamburger');
+            const mainNav = document.getElementById('nav_categories');
+
+            hamburgerButton.addEventListener('click',function(){
+        
+                mainNav.classList.toggle('active');
+            })
