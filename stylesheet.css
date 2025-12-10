@@ -1,0 +1,138 @@
+*{
+    box-sizing:border-box;}
+
+body{
+    font-size: 125%;
+}
+
+
+a{
+    color:black;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration: underline;
+    color:orange;
+}
+
+
+/*HEADER*/
+header{
+    width:100vw;
+    margin:0;
+    padding:0;
+
+}
+
+#toppage{
+border:1px solid blue;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+
+#weather_icon{
+    display:flex;
+    align-items: center;
+  /*  border: 1px solid orange;*/
+    margin-left:35%;
+}
+
+#navbooking{
+    padding:2rem;
+    
+}
+
+#navbooking a{
+    padding:2rem;
+    font-size:135%;
+    text-decoration:none;
+}
+
+#bookbutton{
+    margin-left:1rem;
+    border:3px solid orange;
+    border-radius:15px;
+}
+
+nav{
+    border:1px solid red;
+    width:100vw;
+    display:flex;
+    justify-content:space-between;
+}
+
+#nav_categories li{
+    display:inline;
+    list-style-type: none;
+    padding:8rem;
+
+}
+
+#search{
+    display:flex;
+    align-items: center;
+}
+
+#search_button{
+    font-size:115%;
+    margin:0 2rem;
+    border:2px solid orange;
+    border-radius:5px;
+    background-color:white;
+}
+#search_input{
+    display:none;
+    font-size:115%;
+    margin:0 2rem;
+    border:2px solid orange;
+    border-radius:5px;
+    
+}
+
+button#hamburger{
+    display:none;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding:1rem 2rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#footer_text ul{
+    padding:0;
+}
+
+#footer_text li{
+    
+    list-style-type: none;
+}
+
+#footer_social{
+   
+   display: flex;
+   width:15%;
+   flex-wrap: wrap;
+   height:100%;
+   padding:3rem;
+}
+
+#footer_social a:hover{
+    border:2px solid orange;
+    border-radius:8px;
+}
