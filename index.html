@@ -3,38 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>Shangri-La</title>
-        <link rel="icon" type="image" href="logos/favicon.png">
+        <link rel="icon" type="image" href="logos/favicon_light.svg">
+        
         <link rel="stylesheet" href="stylesheet.css">
+        
+        <!--Google Fonts Links-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Molle:ital@1&display=swap" rel="stylesheet">
     </head>
+
+    
     <body>
         <header>
         <div id="toppage">
+
             <!--Logo-->
-            
-            <a href="#"><img src="logos/logo_black.svg" width="423" height="127" alt="Hibiscus flower and Shangri-La logo"></a><!--ADD LINK LATER:Link to Home-->
+            <a href="#"><img src="logos/logo_yellow.svg" width="423" height="127" alt="Hibiscus flower and Shangri-La logo"></a><!--ADD LINK LATER:Link to Home-->
             <!--Original logo size is 1268x382-->
-            
-            
-            <!--Weather-->
-            <div id="weather_icon">
-            <img id="weather" src="#" width="100" height="100">
-            <p id="cancun_temp"></p>
-            </div>
 
             <!--Contact Icons-->
             <div id="navbooking">
+            
+             <!--Weather-->
+                <div id="weather_icon">
+                <img id="weather" src="#" width="100" height="100" alt="current weather conditions" >
+                <p id="cancun_temp"></p>
+                </div>
+
             <a href="mailto:shangrila@resort.com" title="Email Us">&#128386;</a>
            
             <a href="tel:+40355568786" title="Call Us">&#128381;</a>
            
             <!--Book now "Button"-->
-
             <a href="#" id="bookbutton">Book now</a> <!--ADD LINK LATER:Link to Booking Page-->
+
             </div>
-            <!--Navigation-->
+
         </div>
         
+         <!--Navigation-->
             <nav>
                 <button id="hamburger">&#9776;</button>
                <ul id="nav_categories">
@@ -43,7 +53,6 @@
                 <li><a href="#">Dining</a></li><!--ADD LINK LATER-->
                 <li><a href="#">Experiences</a></li><!--ADD LINK LATER-->
                </ul>
-               <!--When the user clicks on the search icon - the search bar appears-->
             <div id="search">
                <button id="search_button">&#128269;</button>
                <input id="search_input" type="text" placeholder="Search..."><!--Global Search over all pages--><!--JAVASCRIPT-->
@@ -51,20 +60,25 @@
             </nav>
         </header>
 
-        <!--Testimonials-->
-        <aside>
+        <main>
 
-        </aside>
 
-        <footer>
+
+
+
+        </main>
+
+        <footer loading="lazy">
+
             <div id="footer_text">
-            <h2>Shangri-La Resort</h2>
+            <img src="logos/logo_dark.svg" width="250" height="auto" alt="Hibiscus flower and Shangri-La logo" >
             <ul>
                 <li><a href="#">Boulevard Kukulcan Km 14.5, Chac L-41, Zona Hotelera, 77500 Cancún, Q.R., Mexico</a></li><!--ADD LINK LATER : To a map-->
                 <li>Phone: <a href="tel:+818346-8033">808-5556-8786</a></li>
                 <li>Email: <a href="mailto:shangrila@resort.com">shangrila@resort.com</a></li>
             </ul>
             </div>
+
             <div id="footer_social">
             <a href="#"><img src="logos/social_media_icons/instagram-brands-solid-full.svg" width="50" height="50" alt="Instagram Icon"></a>
             <a href="#"><img src="logos/social_media_icons/facebook-brands-solid-full.svg" width="50" height="50" alt="Facebook Icon"></a>
