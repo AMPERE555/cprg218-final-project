@@ -188,8 +188,10 @@ footer{
    align-self: flex-start;
    flex-direction:row;
    flex-wrap: wrap;
+   min-width:10%;
+    max-width:30%;
    width:10%;
-   height:100%;
+   height:auto;
    padding:2rem;
 }
 
@@ -201,6 +203,9 @@ footer{
     border:2px solid #F8D36C;
     border-radius:8px;
 }
+
+
+
 
 
 
@@ -267,8 +272,7 @@ body{
 }
 
 #toppage a img{
-    max-width:40vw;
-    min-width:25vw;
+    max-width:50vw;
     height:auto;
 }
 
@@ -284,7 +288,7 @@ body{
 }
 
 #bookbutton{
-    max-width:20vw;
+    max-width:30vw;
     min-width:10vw;
     height:auto;
     font-size:125%;
@@ -341,15 +345,29 @@ nav{
     
     #footer_social{
         width:30%;
+        height:auto;
         text-align: right;
     }
+
     #footer_social a{
         margin-right:1rem;
     }
+
     #footer_social a:last-of-type{
         margin-right:0;
     }
-    
+
+     #footer_social a img{
+        max-width:6vw;
+        min-width:2vw;
+        height:auto;
+    }
+
+    #footer_text img{
+        max-width:30vw;
+        height:auto;
+    }
+
    #footer_text{
     width:70%;
    }
@@ -360,6 +378,91 @@ nav{
 
 }
 
-/*BREAK POINT @ MAX-WIDTH 900PX
+/*BREAK POINT @ MAX-WIDTH 900PX*/
+@media screen and (max-width:900px){
 
-/*BREAK POINT @ MIN-WIDTH 320PX*/
+    body{
+        font-size:80%;
+    }
+
+    #footer_text li{
+        width:70%;
+    }
+
+    #footer_social{
+        flex-direction:column;
+        align-items: flex-end;
+        width:20%
+    }
+     #footer_social a{
+        margin:0;
+     }
+     #footer_social a:last-of-type{
+        margin-bottom:1rem;
+     }
+   
+
+}
+
+
+
+/*BREAK POINT @ MIN-WIDTH 320PX and Max-width:750px*/
+@media screen and (max-width:750px){
+
+
+#navbooking{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding:0;
+    width:85vw;
+    justify-content: center;
+    align-items:center;
+    font-size:95%;
+
+}
+
+#weather{
+    max-width:10vw;
+    height:auto;
+}
+
+nav{
+    height:3rem;
+}
+
+#navbooking a{
+    
+    margin:1rem 1.5rem;
+}
+
+#bookbutton{
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+
+ #search_button{
+        width:15vw;
+        margin:1rem;
+ }
+
+ #search_input{
+        width:30vw;
+    }
+footer{
+    padding:0 1rem;
+}
+
+#footer_text{
+    font-size:70%;
+    padding:0.5rem;
+    
+}
+
+#footer_social{
+    margin:0 0.5rem;
+    font-size: 75%;
+}
+
+}
